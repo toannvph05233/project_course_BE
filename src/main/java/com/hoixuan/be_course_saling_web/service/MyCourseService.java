@@ -51,7 +51,7 @@ public class MyCourseService {
             double completionProgress = ((double) myCourse.getLessonList().size()) / ((double) lessonList.size()) * 100;
             DecimalFormat f = new DecimalFormat("##,00");
 
-            myCourse.setCompletionProgress(Double.parseDouble(f.format(completionProgress)));
+            myCourse.setCompletionProgress(completionProgress);
         }
         return iMyCourseRepo.save(myCourse);
     }
