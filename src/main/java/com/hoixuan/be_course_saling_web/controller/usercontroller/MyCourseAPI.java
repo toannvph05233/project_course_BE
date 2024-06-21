@@ -137,7 +137,6 @@ public class MyCourseAPI {
 
     @GetMapping("/trendingCourse")
     public ResponseEntity<List<Course>> getTrendingCourse() {
-        List<Course> courseList = courseService.getTrendingCourse();
         return new ResponseEntity<>(courseService.getTrendingCourse(), HttpStatus.OK);
     }
     @GetMapping("/showUser")

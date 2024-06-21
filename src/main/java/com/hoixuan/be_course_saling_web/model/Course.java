@@ -31,4 +31,8 @@ public class Course {
     private int numLesson = 0;
     @OneToOne
     private Quiz quiz;
+
+    @Transient
+    private double similarityScore; // Trường này không được lưu vào cơ sở dữ liệu
+
 }

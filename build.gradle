@@ -36,6 +36,8 @@ dependencies {
     implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.1'
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.13.0'
+// https://mvnrepository.com/artifact/org.apache.commons/commons-text
+    implementation group: 'org.apache.commons', name: 'commons-text', version: '1.10.0'
 
 }
 
